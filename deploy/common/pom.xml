@@ -25,11 +25,11 @@
         <deploy.target>common</deploy.target>
     </properties>
 
-    <dependencies>
+    <!--<dependencies>
         <dependency>
             <groupId>uk.ac.ox.it.sentry</groupId>
             <artifactId>sentry-sakai</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
-    </dependencies>
+    </dependencies>-->
 </project>

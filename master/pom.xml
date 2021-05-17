@@ -2035,7 +2035,7 @@
         <artifactId>sakai</artifactId>
         <extensions>true</extensions>
         <configuration>
-          <deployDirectory>${master.directory}/../docker/sakai/tomcat</deployDirectory>
+          <deployDirectory>${maven.tomcat.home}</deployDirectory>
           <warSourceDirectory>${basedir}/src/webapp</warSourceDirectory>
         </configuration>
       </plugin>

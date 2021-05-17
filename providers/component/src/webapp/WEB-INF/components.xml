@@ -161,15 +161,15 @@
 -->
 
 <!-- Uncomment and configure to use the UnboundidDirectoryProvider -->
-	<import resource="unboundid-ldap.xml" />
+	<!--import resource="unboundid-ldap.xml" /-->
 
 <!-- Uncomment and configure to use the legacy JLDAP Provider -->
 	<!--<import resource="jldap-beans.xml"/>-->
 	<!-- These aren't in our 10 build yet. -->
-	<import resource="external-group-beans.xml"/>
+	<!--<import resource="external-group-beans.xml"/>
 	<import resource="course-signup-beans.xml"/>
 	<import resource="hibernate-hbms.xml"/>
-	<import resource="candidate-details.xml"/>
+	<import resource="candidate-details.xml"/>-->
 
 <!--	Uncomment and configure to use the Kerberos Provider.
 
@@ -200,7 +200,7 @@
 
 	<!-- Use the federating provider to first try the LDAP directory provider
 	     and then to try the kerberos directory provider. -->
-	<bean id="org.sakaiproject.user.api.UserDirectoryProvider"
+	<!--<bean id="org.sakaiproject.user.api.UserDirectoryProvider"
 		class="org.sakaiproject.provider.user.FilterUserDirectoryProvider"
 		init-method="init" destroy-method="destroy">
 		<property name="myProvider">
@@ -209,7 +209,7 @@
 		<property name="nextProvider">
 			<ref bean="org.sakaiproject.provider.user.ThreadCheckUserDirectoryProvider" />
 		</property>
-	</bean>
+	</bean>-->
 
 	<bean id="org.sakaiproject.user.detail.ValueEncryptionUtilities"
 		class="org.sakaiproject.user.detail.ValueEncryptionUtilities" init-method="init">
